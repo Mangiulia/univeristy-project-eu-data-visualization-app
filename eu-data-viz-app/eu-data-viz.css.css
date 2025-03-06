@@ -1,0 +1,151 @@
+
+:root {
+
+ --font-family-default: 'Merriweather'; 
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-display: swap;
+  font-size: 12px;
+  font-weight: 100 900;
+  src: url('./media/Merriweather/Merriweather-Black.ttf') format('truetype');
+}
+
+body {
+  background-color: #e3e0e0;
+  font-family: var(--font-family-default);
+  padding: 0;
+  height: 100vh;
+ 
+}
+
+table, th, td {
+
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-collapse: collapse;
+  padding: 20px;
+
+}
+
+table {
+  border-radius: 20px;
+  background-color: black;
+}
+th, td {
+  background-color: rgb(191, 191, 191);
+}
+
+
+button:hover,
+select:hover {
+  background-color: #D8BFD8;
+}
+
+@keyframes gradient {
+
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+
+}
+
+#selectors {
+
+  text-align: center;
+  padding: 20px;
+}
+
+#barChart {
+
+  box-sizing: border-box;
+  width: 90%;
+    max-width: 1000px;
+}
+
+#chartContainer1 {
+
+  background-color: #770737;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #e0e0e0;
+
+}
+
+#popUpChart {
+
+  width: 70%;
+  max-width: 400px;
+  padding: 20px;
+  font-size: 12pt;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+#popUpChart::before {
+
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 20px;
+  top: -10px;
+  z-index: -1;
+
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+.nav-bar {
+  max-width: 300px;
+  height: 100vh;
+  background-color: #770737	;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.selectors-container {
+  display: flex;
+  flex-direction: column;
+}
+
+button, select {
+  border-radius: 20px;
+  background-color: #E6E6FA;
+  color: black;
+  font-family: var(--font-family-default);
+  font-weight: 700;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  /* background-color: aqua; */
+}
+
+
+* {
+  box-sizing: border-box;
+}
