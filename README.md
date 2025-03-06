@@ -1,4 +1,4 @@
-# univeristy-project-eu-data-visualization-app
+# university-project-eu-data-visualization-app
 # Overview
 This project is an interactive web application that visualizes economic and demographic data for European Union countries between 2000 and 2018. It focuses on three key indicators: GDP per capita , Life Expectancy , Population.
 The data is automatically fetched from the Eurostat API, processed, and stored locally for visualization.
