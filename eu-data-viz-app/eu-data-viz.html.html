@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <title> Multimedia Project </title>
+  <link rel="stylesheet" href="3_1090_MAN_GIULIA_PAULA.css">
+
+
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav-bar">
+     
+      <div id="selector" class="selectors-container">
+       <select  type="btnCountry"  id="countries">
+       <option selected>Select a country</option>
+     
+       </select>    
+     <select  type="btnYears" id="years">
+       <option selected disabled>Select a year</option>
+     </select>
+     <select  type="btnIndicators" id="indicators">
+       <option selected disabled>Select an indicator</option>
+     </select>
+  
+     <button id="btnChart">Graphic</button>
+     <button id="btnTable">TABLE</button>
+     <button id="btnBubble">BUBBLE CHART</button>
+     <button id="btnAnimations">ANIMATE</button>
+     
+     </div>
+    </nav>
+    <div id="barChart"></div>
+     <div id="popUpChart">
+      <p id="popUpText" ></p>
+    </div>
+    <div><canvas width="1000px" height="500px" style="width:1000px; height:500px; background-color: #e3e0e0;" id="canvas"></canvas>    
+    </div> 
+    <table style="visibility: hidden" id="colorTable">
+        <thead style="visibility: hidden" id="tHead" >
+            <tr>
+                <th>   </th>
+                <th><b>SPERANTA DE VIATA</b></th>
+                <th><b>PIB PER LOCUITOR</b></th>
+                <th><b>POPULATIE</b></th>
+            </tr>
+        </thead>
+        <tbody id="tBody"></tbody>
+    </table> 
+  </div>
+
+
+   </body>
+      <script type="module" src="3_1090_MAN_GIULIA_PAULA.js">
+
+      </script>
+</body>
+</html>
